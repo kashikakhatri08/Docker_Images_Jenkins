@@ -6,5 +6,5 @@ node {
 		sh "python --version"
 		sh "python ./index.py"
 	}
-	echo "${customImage}"
+    echo "${customImage}"
 }
