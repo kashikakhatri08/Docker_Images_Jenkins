@@ -4,5 +4,6 @@ node {
 	customImage.run()
 	customImage.inside{
 		sh "python --version"
+		sh "python ./index.py"
 	}
 }
