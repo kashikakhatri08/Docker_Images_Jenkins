@@ -1,4 +1,4 @@
 FROM python
-COPY index.py .  
+COPY . /index.py   
 CMD ["python", "./index.py"]
 
