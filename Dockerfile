@@ -1,3 +1,3 @@
 FROM python  
-CMD ["python", "./index.py"]
+CMD ["python", "/src/index.py"]
 
