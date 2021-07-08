@@ -1,3 +1,3 @@
 node{
-    docker.dockerfile(true)
+    docker.dockerfile[true]
     }
