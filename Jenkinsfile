@@ -1,4 +1,4 @@
 node{
     checkout scm
-    dockerfile true
+    docker.dockerfile(reuseNode true)
     }
