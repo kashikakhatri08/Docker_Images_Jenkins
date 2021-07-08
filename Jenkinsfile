@@ -1,6 +1,11 @@
-node {
-    
-
-    def customImage = docker.build("python-app:${env.BUILD_ID}")
-	docker.image("python-Helloapp:${env.BUILD_ID}")
+pipeline {
+    agent { dockerfile true }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+                sh 'svn --version'
+            }
+        }
+    }
 }
