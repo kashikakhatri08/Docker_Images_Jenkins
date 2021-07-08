@@ -1,4 +1,10 @@
-node{
-    checkout scm
-    docker.dockerfile(reuseNode true)
+pipeline {
+    agent { dockerfile true }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
     }
+}
