@@ -1,3 +1,4 @@
-FROM python  
-CMD ["python", "/index.py"]
+FROM node:14-alpine
+
+RUN apk add -U subversion
 
