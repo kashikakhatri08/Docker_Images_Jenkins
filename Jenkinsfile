@@ -1,7 +1,8 @@
 pipeline {
     agent { 
         dockerfile {
-            dir 'root'    
+            dir 'root'
+            label 'master_label'
         } 
     }
     stages {
