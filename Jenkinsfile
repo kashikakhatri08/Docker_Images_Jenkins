@@ -3,6 +3,7 @@ pipeline {
         dockerfile {
             dir 'root'
             label 'master_label'
+            args  '-v /tmp:/tmp'
         } 
     }
     stages {
