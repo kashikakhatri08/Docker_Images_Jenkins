@@ -1,2 +1,2 @@
 FROM node:14-alpine
-RUN 'apk add -u subversion'
+RUN apk add -U subversion
